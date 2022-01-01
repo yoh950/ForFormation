@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: black;
+}
+
+.jumbotron {
+    background-color: black;
+    color: orange;
+}
+
+.bg-white{
+    background-color: white;
+}
+.widget-bottom
+{
+    color: white;
+    background-color: orange;
+}
+.widget div
+{
+    padding: 15px;
+}
+.widget
+{
+    background-color: white;
+    border: solid 1px orange;
+    border-radius: 5px;
+}

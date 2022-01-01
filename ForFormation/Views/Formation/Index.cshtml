@@ -1,0 +1,24 @@
+﻿@model List<Formation>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2 class="text-center small">Vos formations</h2>
+
+<div class="container text-right">
+    <div class="row">
+        @foreach (var formation in Model)
+        {
+            <a asp-action="DetailFormation" asp-controller="Formation" asp-route-id="@formation.Id"  class="border m-2 text-center" style="width: 7rem">
+                <div class="card-body">
+                    @formation.Name
+                    @formation.Id
+                </div>
+            </a>
+        }
+
+
+    </div>
+</div>
