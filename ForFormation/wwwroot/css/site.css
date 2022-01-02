@@ -15,7 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color: black;
+  background-color: gray;
 }
 
 .jumbotron {
@@ -23,8 +23,8 @@ body {
     color: orange;
 }
 
-.bg-white{
-    background-color: white;
+#bg-white{
+    background-color: blue;
 }
 .widget-bottom
 {
