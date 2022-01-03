@@ -17,5 +17,7 @@ namespace ForFormation
 
         public DbSet<Formation> Formations { get; set; }
         public DbSet<Avis> Avis { get; set; }
+
+        public DbSet<Contact> Contact { get; set; }  
     }
 }

@@ -9,15 +9,28 @@
 
 <div class="container text-right">
     <div class="row">
-        @foreach (var formation in Model)
-        {
-            <a asp-action="DetailFormation" asp-controller="Formation" asp-route-id="@formation.Id"  class="border m-2 text-center" style="width: 7rem">
-                <div class="card-body">
-                    @formation.Name
-                    @formation.Id
-                </div>
-            </a>
-        }
+        <div class="col-md-12">
+            @foreach (var formation in Model)
+            {
+                <article class="info-block">
+                    <div class="card-body">
+                        @formation.Name
+                        <div class="text-end">
+                            <p>@formation.Url</p>
+                        </div>
+                        <p>Vous êtes intéressé n'hésitez plus et venez découvrir la prochaine session</p>
+                    </div>
+                    <a asp-action="DetailFormation" asp-controller="Formation" asp-route-id="@formation.Id" class="border m-2 text-center" style="width: 7rem">
+                        <h4>Inscription</h4>
+                    </a>
+
+
+                </article>
+
+            }
+
+        </div>
+
 
 
     </div>
