@@ -47,5 +47,10 @@ body {
 {
     background-color: white;
     border: 1px solid white;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    min-height: 225px;
+}
+i
+{
+    color: orange;
 }
