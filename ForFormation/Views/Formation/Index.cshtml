@@ -5,18 +5,19 @@
 @{
 }
 
-<h2 class="text-center small">Vos formations</h2>
+<h2 class="text-center p-3">Vos formations</h2>
 
 <div class="container text-right">
     <div class="row">
-        <div class="col-md-3 col-sm-6">
+        
             @foreach (var formation in Model)
             {
+                <div class="col-md-3 col-sm-6">
                 <article class="info-block">
                     <div class="card-body">
-                        @formation.Name
-                        <div class="text-end">
-                            <p>@formation.Url</p>
+                        <h2>@formation.Name</h2>
+                        <div class="text-center">
+                            <p>@formation.Description</p>
                         </div>
                         <p>Vous êtes intéressé n'hésitez plus et venez découvrir la prochaine session</p>
                     </div>
@@ -26,12 +27,18 @@
 
 
                 </article>
-
+                </div>
+                
             }
 
-        </div>
+        
 
 
 
     </div>
+</div>
+<div class="container">
+    <a asp-action="Add" asp-controller="Formation" class="btn btn-primary">
+        <h3>Ajouter une formation</h3>
+    </a>
 </div>

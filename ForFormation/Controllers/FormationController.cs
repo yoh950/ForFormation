@@ -32,5 +32,19 @@ namespace ForFormation.Controllers
 
             return this.View(formation);
         }
+        public IActionResult Add()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Add(Models.Formation formation)
+        {
+            if(ModelState.IsValid)
+            {
+                this._context.Formations.Add(formation);
+                this._context.SaveChanges();
+            }
+            return this.RedirectToAction("Index");
+        }
     }
 }

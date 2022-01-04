@@ -27,6 +27,7 @@ body {
     background-color: white;
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 .widget-bottom
 {
@@ -43,12 +44,11 @@ body {
     border: solid 1px orange;
     border-radius: 5px;
 }
-.info-block
-{
+.info-block {
     background-color: white;
     border: 1px solid white;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
-    min-height: 225px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    min-height: 355px;
 }
 i
 {
